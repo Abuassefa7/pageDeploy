@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header style start */
+.headerWrapper{
+    background-color: black;
+    color: #fff;
+    font-weight: 200;
+    font-size: 0.75em;
+    position: fixed;
+    width: 100%;
+}
+.headerWrapper ul{
+    display: flex;
+    -webkit-box-pack: justify;
+    /* Question1- why we use? what is box-pack: start, center, end, justify [inherit,intial,unset */
+    justify-content: space-between;
+}
+.internalWrapper{
+    width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.headerWrapper .headerLinksWrapper ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.headerWrapper ul{
+    list-style: none;
+}
+.headerWrapper .headerLinksWrapper ul li{
+    display: inline-block;
+    padding: 14px 0 8px;
+    height: 25px;
+    opacity: 0.8;
+}
+.headerWrapper .headerLinksWrapper ul li:hover{
+    opacity: 1;
+}
+.logoLink ,.searchLink ,  .cartLink {
+    width: 18px; 
+    display:block
+}
+.headerWrapper .headerLinksWrapper ul li.logoLink {
+padding: 12px 0 10px;
+}
+.headerWrapper .headerLinksWrapper ul li.searchLink {
+    padding: 14px 0 8px ;
+}
+.headerWrapper .headerLinksWrapper ul li.cartLink{
+    padding: 12px 0 10px;
+}
+/* Footer styling  start*/
+.footerWrapper{
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-size: .65em;
+}
+.upperTextContainer{
+    border-bottom: 1px solid #d2d2d7; 
+    color: #86868b;
+    padding: 17px 0 20px;
+}
+.upperTextContainer p{
+    font-size: 13px;
+    /* additional property */
+}
+
+.upperTextContainer a{
+    text-decoration: none;
+    color: #515154;
+}
+.upperTextContainer a:hover{
+    text-decoration: underline;
+}
+.footerLinksWrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.footerWrapper ul{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.footerLinksWrapper h3{
+    font-size: 12px;
+    font-weight: 600;
+}
+.footerWrapper ul li{
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+.footerWrapper ul li :last-child{
+    border-right: none;
+}
+.footerLinksWrapper a{
+    color: #515154;
+    text-decoration: none;
+    opacity: 1;
+}
+.footerLinksWrapper a:hover{
+    text-decoration: underline;
+}
+.myAppleWrapper{
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    
+}
+.myAppleWrapper :last-child{
+    border-right: none;
+}
+.copyRightWrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0 20px;
+}
+.footerLinksTerms ul li{
+    display: inline-block;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+.footerLinksTerms ul li a{
+    text-decoration: none;
+	color: #515154;
+}
+.footerLinksTerms ul li a:hover{
+text-decoration: underline;
+}
+.footerCountry{
+    display: inline-block;
+}
+.flagWrapper{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footercountryName{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* mainwrapper Section start */
+.mainWrapper{
+    background-color: #fafafa;
+    text-align: center;
+    padding: 25px 0;
+}
+.model{
+    font-size: 0.85em;
+}
+.productTitle{
+    font-weight: 700;
+    font-size: 56px;
+}
+.brifeDescription{
+    font-size: 2em;
+}
+.linkWrapper ul{
+    list-style: none;
+}
+.linkWrapper{
+    padding: 15px 0;
+}
+.linkWrapper ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+.linkWrapper ul li a{
+    text-decoration: none;
+    color: #06c;
+}
+.linkWrapper ul li a:hover{
+    color: #000;
+}
+.linkWrapper ul li a:after{
+    font-family:"FontAwesome";
+    font-weight: 900;
+    content: "\f105";
+    /* Question 1 -how to use number icons */
+    padding-left: 10px;
+}
+/* secondWrapper Section start */
+.secondWrapper{
+    background-image: url(../Images/home/iphone11-pro-bg.jpg);
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 65px 20px;
+    color: #fff;
+}
+.titleWrapper{
+    font-weight: 600;
+    font-size: 56px;
+
+}
+.descriptionWrapper{
+    font-size: 26px;
+    padding: 10px 0;
+}
+.priceWrapper{
+    color: #86868b; 
+	font-size: 0.85em;
+}
+/* thirdWrapper Section start*/
+.thirdWrapper{
+    background-image: url(../Images/home/iphone11-bg.jpg);
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 65px 20px;
+}
+/* fourthWrapper Section Start */
+.fourthWrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background: #fff;
+}
+.leftSideWrapper ,.rightSideWrapper {
+    height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	width: 49.5%;
+	margin: 1% 0.5% 0% 1%; 
+    /* Question */
+	padding-top: 54px;
+}
+
+.fourthWrapper .leftSideWrapper{
+    background-image: url(../Images/home/watch-series-5.jpg);
+}
+.fourthWrapper .rightSideWrapper{
+    background-image: url(../Images/home/apple-card.jpg);
+}
+/* .descriptionWrapper{
+    max-width: 430px; 
+     margin: 0 auto;
+	 padding: 10px; 
+} */
+.descriptionWrapper{
+    padding: 10px; 
+}
+
+/* fifthWrapper Section start */
+.fifthWrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.fifthWrapper .leftSideWrapper{
+    background-image: url(../Images/home/apple-tv-background.jpg);
+}
+.fifthWrapper .rightSideWrapper{
+    background-image: url(../Images/home/air-pods.jpg);
+    color: #fff;
+    background-size: initial;
+    /* Question when use background-size % */
+    background-color: #000;
+    background-position: bottom;
+}
+.logoWrapper{
+    font-size: 40px;
+    font-weight: bold;
+}
+.tvshowlogo{
+    padding: 180px 0 200px;
+}
+.watchMore a{
+    text-decoration: none;
+    font-size: 0.85em;
+}
+.watchMore a:after{
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f144";
+    padding-left: 15px;
+}
+/* sixthWrapper Section Start */
+.sixthWrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background: #fff;
+}
+.sixthWrapper .leftSideWrapper{
+    background-image: url(../Images/home/macbook-pro.jpg);
+    background-size: initial;
+	background-color: #fafafa;
+    background-position: bottom;
+    
+}
+.sixthWrapper .rightSideWrapper{
+    background-image: url(../Images/home/new-ipad.jpg);
+}
+.productTitle{
+    font-size: 700;
+    font-size: 45px;
+}
+/* sixthWrapper Section End */
